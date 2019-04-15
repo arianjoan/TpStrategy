@@ -26,19 +26,19 @@ Por otra parte, con Maven la gestión de dependencias entre módulos y distintas
 
 Además, en el caso de las librerías, no tienes ni tan siquiera que descargarlas a mano. Maven posee un repositorio remoto (Maven central) donde se encuentran la mayoría de librerías que se utilizan en los desarrollos de software, y que la propia herramienta se descarga cuando sea necesario.
 
-#¿Que es POM?
+# ¿Que es POM?
 
 Un modelo de objeto de proyecto o POM es la unidad fundamental de trabajo en Maven. Es un archivo XML que contiene información sobre el proyecto y los detalles de configuración utilizados por Maven para construir el proyecto. Al ejecutar una tarea o un objetivo, Maven busca el POM en el directorio actual. Lee el POM, obtiene la información de configuración necesaria y luego ejecuta el objetivo.
 
 Algunas de las configuraciones que se pueden especificar en el POM son las dependencias del proyecto, los complementos u objetivos que se pueden ejecutar, los perfiles de compilación, etc. También se puede especificar otra información, como la versión del proyecto, descripción, desarrolladores, listas de correo y similares.
 
-#¿Qué es un archetype y un artefact ID?
+# ¿Qué es un archetype y un artefact ID?
 
 En esencia, un archetype es un patrón o modelo sobre el que se pueden desarrollar todas aquellas tareas que son de un mismo tipo. Puede decirse que son plantillas, parametrizadas o configuradas para utilizar determinadas tecnologías que los desarrolladores utilizan como base para escribir y organizar el código de la aplicación.
 
 ArtifactId es la identificación que recibe una dependencia dentro del Maven Central, es decir, es el nombre con el que nosotros podemos integrar dicha dependencia dentro de nuestro proyecto.
 
-#Goals en MAVEN (Clean, Package, Install, Compile)
+# Goals en MAVEN (Clean, Package, Install, Compile)
 
 Un Goal no es mas que un comando que recibe maven como parámetro para que haga algo, algunos ejemplos son:
 
@@ -47,7 +47,7 @@ Package: Toma el código compilado y lo empaqueta en su formato distribuible, co
 Install: Instala el paquete en el repositorio local, para usarlo como una dependencia en otros proyectos a nivel local.
 Compile: Compila el codigo fuente del proyecto.
 
-#Scopes en MAVEN (Compile, Provider, runtime, test, system).
+# Scopes en MAVEN (Compile, Provider, runtime, test, system).
 
 El scope sirve para indicar el alcance de nuestra dependencia y su transitividad. 
 
