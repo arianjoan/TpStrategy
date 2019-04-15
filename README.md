@@ -1,7 +1,7 @@
 # TpStrategy
 Trabajo practico N1 - Patron Strategy (Torneo de Frescas)
 
-#¿Qué es Maven?
+# ¿Qué es Maven?
 
 Maven es una herramienta open-source, que se creó en 2001 con el objetivo de simplificar los procesos de build (compilar y generar ejecutables a partir del código fuente), permitiéndonos compilar cualquier tipo de proyecto de la misma manera, librándonos de todas las dificultades que hay por detrás.
 
