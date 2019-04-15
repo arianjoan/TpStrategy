@@ -12,9 +12,11 @@ Podríamos decir, que Maven es una herramienta capaz de gestionar un proyecto so
 Para ello, en Maven se definen tres ciclos de build del software con una serie de etapas diferenciadas. Por ejemplo el ciclo por defecto tiene las etapas de:
 
 #Validación (validate): Validar que el proyecto es correcto.
-#Compilación (compile).
-#Test (test): Probar el código fuente usando un framework de pruebas unitarias.
-#Empaquetar (package): Empaquetar el código compilado y transformarlo en algún formato tipo .jar o .war.
+
+·Compilación (compile).
+
+·Test (test): Probar el código fuente usando un framework de pruebas unitarias.
+·Empaquetar (package): Empaquetar el código compilado y transformarlo en algún formato tipo .jar o .war.
 #Pruebas de integración (integration-test): Procesar y desplegar el código en algún entorno donde se puedan ejecutar las pruebas de integración.
 #Verificar que el código empaquetado es válido y cumple los criterios de calidad (verify).
 #Instalar el código empaquetado en el repositorio local de Maven, para usarlo como dependencia de otros proyectos (install).
