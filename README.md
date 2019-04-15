@@ -49,20 +49,27 @@ ArtifactId es la identificación que recibe una dependencia dentro del Maven Cen
 
 Un Goal no es mas que un comando que recibe maven como parámetro para que haga algo, algunos ejemplos son:
 
-Clean: Limpia los artefactos creados por versiones anteriores al momento de compilar.
-Package: Toma el código compilado y lo empaqueta en su formato distribuible, como un .jar.
-Install: Instala el paquete en el repositorio local, para usarlo como una dependencia en otros proyectos a nivel local.
-Compile: Compila el codigo fuente del proyecto.
+·Clean: Limpia los artefactos creados por versiones anteriores al momento de compilar.
+
+·Package: Toma el código compilado y lo empaqueta en su formato distribuible, como un .jar.
+
+·Install: Instala el paquete en el repositorio local, para usarlo como una dependencia en otros proyectos a nivel local.
+
+·Compile: Compila el codigo fuente del proyecto.
 
 # Scopes en MAVEN (Compile, Provider, runtime, test, system).
 
 El scope sirve para indicar el alcance de nuestra dependencia y su transitividad. 
 
-Compile: es la que tenemos por defecto sino especificamos scope. Indica que la dependencia es necesaria para compilar. La dependencia además se propaga en los proyectos dependientes.
-Provide: Es como la anterior, pero esperas que el contenedor ya tenga esa libreria. 
-Runtime: La dependencia es necesaria en tiempo de ejecución pero no es necesaria para compilar.
-Test: La dependencia es solo para testing que es una de las fases de compilación con maven.
-System: Es como provide pero tienes que incluir la dependencia explicitamente. Maven no buscará este artefacto en tu repositorio local. Habrá que especificar la ruta de la dependencia mediante la etiqueta <systemPath>
+·Compile: es la que tenemos por defecto sino especificamos scope. Indica que la dependencia es necesaria para compilar. La dependencia además se propaga en los proyectos dependientes.
+
+·Provide: Es como la anterior, pero esperas que el contenedor ya tenga esa libreria. 
+
+·Runtime: La dependencia es necesaria en tiempo de ejecución pero no es necesaria para compilar.
+
+·Test: La dependencia es solo para testing que es una de las fases de compilación con maven.
+
+·System: Es como provide pero tienes que incluir la dependencia explicitamente. Maven no buscará este artefacto en tu repositorio local. Habrá que especificar la ruta de la dependencia mediante la etiqueta <systemPath>
 
 
 
